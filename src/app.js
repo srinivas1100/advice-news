@@ -7,6 +7,8 @@ const newsRouter = require("./news/news_router");
 
 const app = express();
 
+app.use(express.json());
+
 app.use("/v1", newsRouter);
 
 module.exports = app;
